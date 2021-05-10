@@ -1,2 +1,2 @@
-git "file:///Users/Jud/Projects/CaptuvoManager" "master"
-git "file:///Users/Jud/Projects/BarcodeLoginController" "master"
+git "git@github.com:judsonco/BarcodeLoginController.git" "master"
+git "git@github.com:judsonco/CaptuvoManager.git" "master"

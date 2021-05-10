@@ -1,0 +1,4 @@
+git "file:///Users/Jud/Projects/BarcodeLoginController" "748688a50e6273b9001f1ca5b9e5f85e25de6e7a"
+git "file:///Users/Jud/Projects/CaptuvoManager" "0f034ce5060ecba1588e1ee07e65153342413265"
+github "sgl0v/SCrypto" "c9e367b8622e5b3c1f1a42952c7a9c71c639cc6f"
+github "yeahdongcn/RSBarcodes_Swift" "8fd46e69dc262f6cbe8b026c8519ff33539e6763"

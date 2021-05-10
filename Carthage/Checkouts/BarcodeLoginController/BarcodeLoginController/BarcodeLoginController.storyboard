@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Barcode Login Controller-->
+        <scene sceneID="O8u-jp-Hbd">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeLoginController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Li7-Cg-kWI" customClass="BarcodeLoginController" customModule="BarcodeLoginController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tEX-jq-Yq3"/>
+                        <viewControllerLayoutGuide type="bottom" id="y4Y-l0-3y8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4X-fx-F9I">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIq-BN-Ts0">
+                                <rect key="frame" x="494" y="10" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <state key="selected">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestedControllerDismissal:" destination="Li7-Cg-kWI" eventType="primaryActionTriggered" id="qcq-XR-Zv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d19-1y-liZ">
+                                <rect key="frame" x="20" y="10" width="84" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Flip Camera">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestedCameraFlip:" destination="Li7-Cg-kWI" eventType="primaryActionTriggered" id="isg-16-zAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d19-1y-liZ" secondAttribute="trailingMargin" id="K5U-CN-Zdj"/>
+                            <constraint firstItem="eIq-BN-Ts0" firstAttribute="trailing" secondItem="B4X-fx-F9I" secondAttribute="trailingMargin" id="KEf-ym-l3I"/>
+                            <constraint firstItem="d19-1y-liZ" firstAttribute="top" secondItem="tEX-jq-Yq3" secondAttribute="bottom" constant="10" id="NDP-P1-cO9"/>
+                            <constraint firstItem="eIq-BN-Ts0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="B4X-fx-F9I" secondAttribute="leadingMargin" id="QB5-Hh-xdo"/>
+                            <constraint firstItem="d19-1y-liZ" firstAttribute="leading" secondItem="B4X-fx-F9I" secondAttribute="leadingMargin" id="rwo-yI-d1l"/>
+                            <constraint firstItem="eIq-BN-Ts0" firstAttribute="top" secondItem="tEX-jq-Yq3" secondAttribute="bottom" constant="10" id="y85-1m-wiS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z5E-XO-Lbb"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissViewControllerButton" destination="eIq-BN-Ts0" id="nJI-GS-Dgr"/>
+                        <outlet property="flipCameraButton" destination="d19-1y-liZ" id="6ug-Na-dvt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAz-xe-3xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-814" y="632"/>
+        </scene>
+    </scenes>
+</document>
